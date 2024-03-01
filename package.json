@@ -1,0 +1,25 @@
+{
+  "name": "cowtchoox",
+  "displayName": "Cowtchoox",
+  "description": "Syntax highlighting for Cowtchoox documents",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cow",
+      "aliases": ["Cowtchoox", "cow"],
+      "extensions": [".cow"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cow",
+      "scopeName": "source.cow",
+      "path": "./syntaxes/cow.tmLanguage.json"
+    }]
+  }
+}
